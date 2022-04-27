@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
 import ToastContainer from "react-bootstrap/ToastContainer";
 import Toast from "react-bootstrap/Toast";
+import styles from "styles/Home.module.css";
 import { CgSearch } from "react-icons/cg";
 import { FilmSearchResultType, SearchBoxPropsType } from "types";
 import { FormEvent, useEffect, useState } from "react";
@@ -52,7 +53,7 @@ export default function SearchBox({ setShowResult }: SearchBoxPropsType) {
       <Row className="justify-content-center">
         <Col sm="10">
           <Form onSubmit={handleSearch}>
-            <InputGroup className="justify-content-center">
+            <InputGroup className="justify-content-center noWrap">
               <Form.FloatingLabel label="Enter movie title">
                 <Form.Control
                   placeholder="Enter movie title"

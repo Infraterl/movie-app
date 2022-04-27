@@ -21,10 +21,10 @@ export default function MovieCard({
   return (
     <div className={styles.card}>
       <div>
-        <HiHashtag /> {imdbID} | <HiArchive /> {Type} | <HiCalendar /> {Year}
+        <HiHashtag /> {imdbID} | <HiArchive /> {Type} | <HiCalendar /> {Year.substring(0,4)}
       </div>
       <h4 className="text-center my-2">
-        <HiFilm /> {Title}
+        <HiFilm /> {Title.substring(0,25)}...
       </h4>
       <div>
         <Image src={imageSrc} alt="movie poster" width={200} height={250} />

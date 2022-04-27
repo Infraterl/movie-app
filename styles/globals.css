@@ -11,6 +11,8 @@ a {
   text-decoration: none;
 }
 
+.input-group { flex-wrap: nowrap !important;}
+
 * {
   box-sizing: border-box;
 }
